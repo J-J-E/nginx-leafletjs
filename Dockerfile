@@ -1,10 +1,9 @@
 FROM nginx:1.10.1-alpine
 
-ADD ./preconfigure.sh /preconfigure.sh
+ADD ./config.sh /config.sh
 COPY ./autosize.js /usr/share/nginx/html
+COPY ./vars.sh /vars.sh
 
-#Documentation
-#EXPOSE 80
 
-RUN chmod +x ./preconfigure.sh
-CMD ./preconfigure.sh
+RUN chmod +x /config.sh
+CMD /config.sh
