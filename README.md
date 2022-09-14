@@ -11,3 +11,5 @@ docker-compose up -d
 
 
 #Find map at http://localhost:8777
+
+#Demo Site: https://map.ehlen.xyz/
