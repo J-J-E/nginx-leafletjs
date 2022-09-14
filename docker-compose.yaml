@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+    nginx-leafletjs:
+        ports:
+            - '8777:80'
+        image: freecandy/nginx-leafletjs
+        restart: always
